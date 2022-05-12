@@ -55,6 +55,7 @@ namespace Komppletering
                     Console.WriteLine("Så här många saker finns i listan: " + myList.Count);
                     Console.ReadLine();
 
+
                 }
                 else if (currentRoom == 2) // Stack
                 {
@@ -64,7 +65,7 @@ namespace Komppletering
                     myStack.Push(2);
                     myStack.Push(3);
 
-                    Console.WriteLine(myStack.Peek());
+                    Console.WriteLine("Det som är högst upp på högen: " + myStack.Peek());
                     Console.WriteLine();
 
 
@@ -75,7 +76,9 @@ namespace Komppletering
                     if (whatAction == "1")
                     {
                         myStack.Pop();
-                        Console.WriteLine(myStack.Peek());
+                        Console.WriteLine("Du poppade det som var högst upp");
+                        Console.WriteLine("Det som är högst upp nu är: " + myStack.Peek());
+                        Console.ReadLine();
 
                     }
                     else if (whatAction == "2")
